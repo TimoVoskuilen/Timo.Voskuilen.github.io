@@ -5,7 +5,7 @@
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="2 Guerilla analytics | _main.knit" />
+<meta property="og:title" content="6 Introduction | _main.knit" />
 <meta property="og:type" content="book" />
 
 
@@ -14,9 +14,9 @@
 
 
 
-<meta name="description" content="2 Guerilla analytics | _main.knit">
+<meta name="description" content="6 Introduction | _main.knit">
 
-<title>2 Guerilla analytics | _main.knit</title>
+<title>6 Introduction | _main.knit</title>
 
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -110,6 +110,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
+<link rel="stylesheet" href="style.css" type="text/css" />
 
 <style type = "text/css">
 .main-container {
@@ -155,55 +156,28 @@ details > summary {
 </div>
 <div class="row">
 <div class="col-sm-12">
-<div id="guerilla-analytics" class="section level1" number="2">
-<h1><span class="header-section-number">2</span> Guerilla analytics</h1>
-<p>An important part of having a project repository is to keep it easily accesible and clean. This will allow anyone who uses the repository to be able to easily find their way around the files and data. The data structure in the repository used for this portfolio is based on the Guerilla Analytics Principle.</p>
-<p>An example of this van be found below:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="2-guerilla-analytics.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#create a tree for the DAUR2 structure</span></span>
-<span id="cb4-2"><a href="2-guerilla-analytics.html#cb4-2" aria-hidden="true" tabindex="-1"></a>fs<span class="sc">::</span><span class="fu">dir_tree</span>(<span class="at">dir =</span> <span class="st">&quot;https://github.com/TimoVoskuilen/Portofolio/tree/main/data/data_Raw/003_data_management&quot;</span>)</span></code></pre></div>
-<pre><code>## .
-## +-- 001_C.elegans_exp.Rmd
-## +-- 003_Guerillla_analytics.Rmd
-## +-- 004_CV.Rmd
-## +-- 005_looking_ahead.Rmd
-## +-- 007_relational_databases.Rmd
-## +-- data_Raw
-## |   +-- 001_C.elegans_exp
-## |   |   +-- CE.LIQ.FLOW.062_Tidydata.xlsx
-## |   |   \-- README
-## |   \-- 007_relational_databases
-## |       +-- dengue_data.csv
-## |       +-- dengue_data_tidy.csv
-## |       +-- dengue_data_tidy.rds
-## |       +-- flu_data.csv
-## |       +-- flu_data_tidy.csv
-## |       +-- flu_data_tidy.rds
-## |       +-- gapminder.csv
-## |       \-- gapminder.rds
-## +-- images
-## |   +-- 007_relational_databasesdBEAVER.png
-## |   +-- 007_relational_databasesSQL.png
-## |   +-- CV.pdf
-## |   +-- CV.png
-## |   +-- foto_cv.jpeg
-## |   \-- Guerilla_analytics_framework_daur2.png
-## +-- Index.Rmd
-## +-- LICENSE
-## +-- Portofolio.Rproj
-## +-- README.md
-## +-- _book
-## +-- _main.Rmd
-## \-- _main_files
-##     \-- figure-html
-##         +-- normalized-1.png
-##         \-- unnamed-chunk-3-1.png</code></pre>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="2-guerilla-analytics.html#cb6-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">&quot;./images/Guerilla_analytics_framework_daur2.png&quot;</span>)</span></code></pre></div>
-<p><img src="images/Guerilla_analytics_framework_daur2.png" width="224" /></p>
+<div id="introduction" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> Introduction</h1>
+<body id = "start">
+<div class ="header">
+<pre><code>&lt;h1&gt;Hi, im Timo, and welcome to my portofolio&lt;h1&gt;</code></pre>
+<div>
+
+<div class="sidenav">
+<a href='index.html#Introduction'>Introduction</a>
+<a href='1-c.elegans-experiment#data-visualisation'>Data visualisation</a>
+<a href='open_peer_review.html#open peer review'>Peer review</a>
+<a href='3-cv#CV'>CV</a>
+<a href='4-looking-ahead#Looking ahead'>Looking ahead</a>
+<a href='5-relational-databases#relational databases'>relational databases</a>
+</div>
+<p> </p>
+<p>Hi, My name is Timo Voskuilen. I am a 22 year old life sciences student at the university of applied sciences at the Hogeschool Utrecht. I am specified in biomedical research and thrive to find a career in the field of oncology. I am currently in the process of becoming a data scientist, I am following a course called Data science for biology at the Hogeschool Utrecht, where im learning do statistical analysis with bash and R.</p>
+</body>
 
 </div>
 <p style="text-align: center;">
-<a href="1-c.elegans-experiment.html"><button class="btn btn-default">Previous</button></a>
-<a href="3-cv.html"><button class="btn btn-default">Next</button></a>
+<a href="5-relational-databases.html"><button class="btn btn-default">Previous</button></a>
 </p>
 </div>
 </div>
