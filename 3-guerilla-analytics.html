@@ -5,7 +5,7 @@
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="3 Guerilla analytics | _main.knit" />
+<meta property="og:title" content="3 Guerilla analytics | Index" />
 <meta property="og:type" content="book" />
 
 
@@ -14,9 +14,9 @@
 
 
 
-<meta name="description" content="3 Guerilla analytics | _main.knit">
+<meta name="description" content="3 Guerilla analytics | Index">
 
-<title>3 Guerilla analytics | _main.knit</title>
+<title>3 Guerilla analytics | Index</title>
 
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -150,7 +150,7 @@ details > summary {
 <li><a href="4-cv.html#cv"><span class="toc-section-number">4</span> CV</a></li>
 <li><a href="5-looking-ahead.html#looking-ahead"><span class="toc-section-number">5</span> Looking ahead</a></li>
 <li><a href="6-relational-databases.html#relational-databases"><span class="toc-section-number">6</span> Relational databases</a></li>
-<li><a href="7-thanks-for-visiting.html#thanks-for-visiting"><span class="toc-section-number">7</span> Thanks for visiting</a></li>
+<li><a href="7-introduction-1.html#introduction-1"><span class="toc-section-number">7</span> Introduction</a></li>
 </ul>
 </div>
 </div>
@@ -161,17 +161,19 @@ details > summary {
 <h1><span class="header-section-number">3</span> Guerilla analytics</h1>
 <body id = "start">
 <div class="sidenav">
-<a href='index.html#Introduction'>Introduction</a>
-<a href='1-c.elegans-experiment#data-visualisation'>Data visualisation</a>
+<a href='1-introduction.html#Introduction'>Introduction</a>
+<a href='2-c.elegans-experiment#data-visualisation'>Data visualisation</a>
 <a href='open_peer_review.html#open peer review'>Peer review</a>
-<a href='3-cv#CV'>CV</a>
-<a href='4-looking-ahead#Looking ahead'>Looking ahead</a>
-<a href='5-relational-databases#relational databases'>relational databases</a>
+<a href='3-guerilla-analytics.html#Guerilla analytics'>Guerilla analytics</a>
+<a href='4-cv#CV'>CV</a>
+<a href='5-looking-ahead#Looking ahead'>Looking ahead</a>
+<a href='6-relational-databases#relational databases'>relational databases</a>
+<a href='7-thanks-for-visiting#thanks for visiting'>thanks for visiting</a>
 </div>
 <p>An important part of having a project repository is to keep it easily accesible and clean. This will allow anyone who uses the repository to be able to easily find their way around the files and data. The data structure in the repository used for this portfolio is based on the Guerilla Analytics Principle.</p>
 <p>An example of this van be found below:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="3-guerilla-analytics.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#create a tree for the DAUR2 structure</span></span>
-<span id="cb9-2"><a href="3-guerilla-analytics.html#cb9-2" aria-hidden="true" tabindex="-1"></a>fs<span class="sc">::</span><span class="fu">dir_tree</span>(<span class="at">dir =</span> <span class="st">&quot;https://github.com/TimoVoskuilen/Portofolio/tree/main/data/data_Raw/003_data_management&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="3-guerilla-analytics.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#create a tree for the DAUR2 structure</span></span>
+<span id="cb6-2"><a href="3-guerilla-analytics.html#cb6-2" aria-hidden="true" tabindex="-1"></a>fs<span class="sc">::</span><span class="fu">dir_tree</span>(<span class="at">dir =</span> <span class="st">&quot;https://github.com/TimoVoskuilen/Portofolio/tree/main/data/data_Raw/003_data_management&quot;</span>)</span></code></pre></div>
 <pre><code>## .
 ## +-- 001_introduction.Rmd
 ## +-- 002_C.elegans_exp.Rmd
@@ -200,73 +202,8 @@ details > summary {
 ## |   +-- CV.png
 ## |   +-- foto_cv.jpeg
 ## |   \-- Guerilla_analytics_framework_daur2.png
+## +-- index.html
 ## +-- Index.Rmd
-## +-- libs
-## |   +-- bootstrap-3.3.5
-## |   |   +-- css
-## |   |   |   +-- bootstrap-theme.css
-## |   |   |   +-- bootstrap-theme.css.map
-## |   |   |   +-- bootstrap-theme.min.css
-## |   |   |   +-- bootstrap.css
-## |   |   |   +-- bootstrap.css.map
-## |   |   |   +-- bootstrap.min.css
-## |   |   |   +-- cerulean.min.css
-## |   |   |   +-- cosmo.min.css
-## |   |   |   +-- darkly.min.css
-## |   |   |   +-- flatly.min.css
-## |   |   |   +-- fonts
-## |   |   |   |   +-- Lato.ttf
-## |   |   |   |   +-- LatoBold.ttf
-## |   |   |   |   +-- LatoItalic.ttf
-## |   |   |   |   +-- NewsCycle.ttf
-## |   |   |   |   +-- NewsCycleBold.ttf
-## |   |   |   |   +-- OpenSans.ttf
-## |   |   |   |   +-- OpenSansBold.ttf
-## |   |   |   |   +-- OpenSansBoldItalic.ttf
-## |   |   |   |   +-- OpenSansItalic.ttf
-## |   |   |   |   +-- OpenSansLight.ttf
-## |   |   |   |   +-- OpenSansLightItalic.ttf
-## |   |   |   |   +-- Raleway.ttf
-## |   |   |   |   +-- RalewayBold.ttf
-## |   |   |   |   +-- Roboto.ttf
-## |   |   |   |   +-- RobotoBold.ttf
-## |   |   |   |   +-- RobotoLight.ttf
-## |   |   |   |   +-- RobotoMedium.ttf
-## |   |   |   |   +-- SourceSansPro.ttf
-## |   |   |   |   +-- SourceSansProBold.ttf
-## |   |   |   |   +-- SourceSansProItalic.ttf
-## |   |   |   |   +-- SourceSansProLight.ttf
-## |   |   |   |   \-- Ubuntu.ttf
-## |   |   |   +-- journal.min.css
-## |   |   |   +-- lumen.min.css
-## |   |   |   +-- paper.min.css
-## |   |   |   +-- readable.min.css
-## |   |   |   +-- sandstone.min.css
-## |   |   |   +-- simplex.min.css
-## |   |   |   +-- spacelab.min.css
-## |   |   |   +-- united.min.css
-## |   |   |   \-- yeti.min.css
-## |   |   +-- fonts
-## |   |   |   +-- glyphicons-halflings-regular.eot
-## |   |   |   +-- glyphicons-halflings-regular.svg
-## |   |   |   +-- glyphicons-halflings-regular.ttf
-## |   |   |   +-- glyphicons-halflings-regular.woff
-## |   |   |   \-- glyphicons-halflings-regular.woff2
-## |   |   +-- js
-## |   |   |   +-- bootstrap.js
-## |   |   |   +-- bootstrap.min.js
-## |   |   |   \-- npm.js
-## |   |   \-- shim
-## |   |       +-- html5shiv.min.js
-## |   |       \-- respond.min.js
-## |   +-- jquery-3.6.0
-## |   |   +-- jquery-3.6.0.js
-## |   |   +-- jquery-3.6.0.min.js
-## |   |   \-- jquery-3.6.0.min.map
-## |   \-- navigation-1.1
-## |       +-- codefolding.js
-## |       +-- sourceembed.js
-## |       \-- tabsets.js
 ## +-- LICENSE
 ## +-- Portofolio.Rproj
 ## +-- README.md
@@ -276,7 +213,7 @@ details > summary {
 ##     \-- figure-html
 ##         +-- normalized-1.png
 ##         \-- unnamed-chunk-3-1.png</code></pre>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="3-guerilla-analytics.html#cb11-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">&quot;./images/Guerilla_analytics_framework_daur2.png&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="3-guerilla-analytics.html#cb8-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">&quot;./images/Guerilla_analytics_framework_daur2.png&quot;</span>)</span></code></pre></div>
 <p><img src="images/Guerilla_analytics_framework_daur2.png" width="224" /></p>
 
 </div>
